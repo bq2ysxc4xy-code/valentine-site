@@ -1,122 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>For Sara ❤️</title>
-
-<style>
-body{
-    margin:0;
-    padding:0;
-    text-align:center;
-    font-family: 'Comic Sans MS', cursive;
-    background: linear-gradient(45deg,#ff6f91,#ff9a9e,#fad0c4);
-    background-size: 400% 400%;
-    animation: gradient 8s ease infinite;
-    color:white;
-    overflow:hidden;
-}
-
-@keyframes gradient{
-    0%{background-position:0% 50%;}
-    50%{background-position:100% 50%;}
-    100%{background-position:0% 50%;}
-}
-
-h1{
-    margin-top:100px;
-    font-size:40px;
-    animation: pop 1s ease;
-}
-
-@keyframes pop{
-    from{transform:scale(0);}
-    to{transform:scale(1);}
-}
-
-button{
-    padding:15px 30px;
-    font-size:22px;
-    border:none;
-    border-radius:30px;
-    margin:15px;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-#yes{
-    background:white;
-    color:#ff4d6d;
-}
-
-#no{
-    background:#ff4d6d;
-    color:white;
-    position:absolute;
-}
-
-button:hover{
-    transform:scale(1.2) rotate(5deg);
-}
-
-.heart{
-    position:absolute;
-    color:white;
-    animation: fall 5s linear infinite;
-}
-
-@keyframes fall{
-    0%{top:-10%;}
-    100%{top:110%;}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Site</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
 </head>
-
 <body>
-
-<h1>Saraaaa 💖 Will you be my Valentine? 🥺💕</h1>
-
-<button id="yes" onclick="yesClick()">Yes of course 💕</button>
-<button id="no" onmouseover="moveNo()">No 😜</button>
-
-<script>
-
-function moveNo(){
-    let x = Math.random() * window.innerWidth;
-    let y = Math.random() * window.innerHeight;
-    document.getElementById("no").style.left = x + "px";
-    document.getElementById("no").style.top = y + "px";
-}
-
-function yesClick(){
-    document.body.innerHTML = `
-    <h1>YAYYYYYYY 😭💕</h1>
-    <p style="font-size:22px; padding:20px;">
-    kanbghek bzzaf bzzaf asaratii zwena ntmna hadshi y3jbek wakha ra ki walo wlkin bghiit nqad lekk shi haja w sf w ohibokk bzzaf nti heya ahsan hajaa trat leyaaaa fhyati ma eamrni nlqa shi insana fhalk im so lucky to havee u 😭💕  
-    muah muah muah muah muah muah muah 😘😘😘😘😘  
-    </p>
-    <button onclick="marry()">Daba so2al akhor 😏💍</button>
-    `;
-
-    for(let i=0;i<30;i++){
-        let heart=document.createElement("div");
-        heart.innerHTML="💖";
-        heart.className="heart";
-        heart.style.left=Math.random()*100+"%";
-        heart.style.fontSize=(20+Math.random()*30)+"px";
-        document.body.appendChild(heart);
-    }
-}
-
-function marry(){
-    document.body.innerHTML = `
-    <h1>Will you marry me Sara? 💍🌹</h1>
-    <p style="font-size:25px;">If you say yes I will scream like a cartoon character 😭💕</p>
-    <div style="font-size:100px;">🌹💍🌹</div>
-    <h2>I LOVE YOU SARA FOREVER AND EVER 💖</h2>
-    `;
-}
-</script>
-
+    <h1>Welcome to the Valentine Site!</h1>
+    <p>Happy Valentine's Day!</p>
 </body>
 </html>
